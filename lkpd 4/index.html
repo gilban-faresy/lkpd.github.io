@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nama= prompt('masukan nama anda')
+        // parseInt digunakan untuk mengubah type data
+        let Math=parseInt(prompt('masukan nilai MTK'));
+        let PABP=parseInt(prompt('masukan nilai PABP'));
+        let DPK=parseInt(prompt('masukan nilai DPK'));
+
+        //proses
+        let mean=( Math + PABP + DPK ) /3;
+        //logika
+        if(mean >= 80 && mean<=100){
+            grade="A";
+        }else if (mean >=75 && mean <80){
+            grade="B";
+        }else if(grade >=65 && mean <75){
+            grade="C";
+        }else if(mean >=45 && mean<45){
+            grade="D";
+        }else if(mean >=0 && mean<45){
+            grade="E"
+        }else{
+            grade="K"
+        }
+        //output
+        console.log(`rata-rata ${nama} adalah: ${mean}`)
+        console.log(`jadi nilai ${nama} adalah: ${grade}`)
+
+
+    </script>
+</body>
+</html>
